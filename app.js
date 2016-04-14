@@ -13,7 +13,7 @@ function config(   $routeProvider,   $locationProvider  ) {
       controller: 'ColorsIndexController',
       controllerAs: 'colorsCtrl'
     })
-    .when('/:hex', {
+    .when('/colors/:index', {
       templateUrl: '/templates/colors/show.html',
       controller: 'ColorsShowController',
       controllerAs: 'colorCtrl'
@@ -34,9 +34,10 @@ function ColorsIndexController(){
 ColorsShowController.$inject = ["$routeParams"];
 function ColorsShowController(   $routeParams   ){
   var vm = this;
-  vm.colors = COLORS;
 
-  console.log('$routeParams.hex is', $routeParams.hex);
+  console.log('$routeParams.index is', $routeParams.index);
+
+  vm.color = COLORS[33];
 }
 
 

@@ -6,10 +6,10 @@ This lab uses [148 Built-In CSS Color Names](https://gist.github.com/nathanallen
 ## The Challenge
 Your goal is to create an angular front-end that displays information about css colors:
 
-* When a user navigates to "/", they should see a list of all 148 css colors.
-* When a user navigates to "/000000", they should see information about hexadecimal color `#000000`, otherwise known as "Black".
+* When a user navigates to `/`, they should see a list of all 148 css colors.
+* When a user navigates to `/colors/33`, they should see information about hexadecimal color `#6495ED`, otherwise known as "CornFlowerBlue" (see the hard-coded list of `COLORS` in `app.js`).
 * Color names should link to their approriate `show` page.
-* The `colors/show.html` should have a convenient "back" button that returns the user to the home page.
+* The `colors/show.html` should have a convenient "Back" button that returns the user to the home page.
 
 ## Setup
 Clone this repo.
@@ -27,7 +27,7 @@ budo -P --host=localhost --open
 
 
 ## Bonuses
-* **Semantic Routes**: Create separate routes for `/color/name/:name` and `color/hex/:hex`, but have them route to the same show page.
+* **Semantic Routes**: Create separate routes for `/color/name/:name` and `color/hex/:hex`, but have them display the same show page.
     * Since there are only 148 named colors in css, and 16^6 (16,777,216) hex colors, not every show page can have a color name in the title. Can you accomodate for this?
 * **Color Picker**: Add an HTML5 colorpicker (input type 'color') to `colors/show.html`.
     * Set its initial value to the hex value of the show page.
