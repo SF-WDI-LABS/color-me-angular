@@ -27,12 +27,24 @@ budo -P --host=localhost --open
 
 
 ## Bonuses
-* **Semantic Routes**: Create separate routes for `/color/name/:name` and `color/hex/:hex`, but have them display the same show page.
+**Semantic Routes**: Create separate routes for `/color/name/:name` and `color/hex/:hex`, but have them display the same show page.
     * Since there are only 148 named colors in css, and 16^6 (16,777,216) hex colors, not every show page can have a color name in the title. Can you accomodate for this?
-* **Color Picker**: Add an HTML5 colorpicker (input type 'color') to `colors/show.html`.
+
+<details>
+<summary>Hint: *How do you find the color by `name` or `hex`?* (Click Here)</summary>
+```js
+var target_number = 2;
+var foundObj = [{num:7},{num:2}].find(function(o){
+    return o.num === target_number;
+})
+```
+</details>
+
+**Color Picker**: Add an HTML5 colorpicker (input type 'color') to `colors/show.html`.
     * Set its initial value to the hex value of the show page.
     * Stretch: when the user changes their color selection, redirect them to the appropriate show page.
-* **Sort the Colors**: Add a [filter](https://docs.angularjs.org/api/ng/filter/filter) to `colors/index.html` that sorts colors by name, alphabetically.
+
+**Sort the Colors**: Add a [filter](https://docs.angularjs.org/api/ng/filter/filter) to `colors/index.html` that sorts colors by name, alphabetically.
     * Next, add a button to the index page that, on click...
         * sorts colors by `name`.
         * sorts colors by `hex`.
