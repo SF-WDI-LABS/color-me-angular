@@ -34,15 +34,15 @@ budo -P --host=localhost --open
 **Semantic Routes**: Create separate routes for `/color/name/:name` and `color/hex/:hex`, but have them display the same show page.
     * Since there are only 148 named colors in css, and 16^6 (16,777,216) hex colors, not every show page can have a color name in the title. Can you accomodate for this?
 
-<details>
-<summary>Hint: *How do you find the color by `name` or `hex`?* (Click Here)</summary>
+Here's how you'd go about it:
+
 ```js
 var target_number = 2;
 var foundObj = [{num:7},{num:2}].find(function(o){
     return o.num === target_number;
 })
 ```
-</details>
+
 
 **Color Picker**: Add an HTML5 colorpicker (input type 'color') to `colors/show.html`.
    * Set its initial value to the hex value of the show page.
