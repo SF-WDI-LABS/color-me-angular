@@ -42,26 +42,7 @@ function ColorsShowController(   $routeParams   ){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// DO NOT TOUCH
-
-
-
+// DO NOT CHANGE THE COLORS OBJECT BELOW!
 var COLORS = [
     {name: "Black", hex: "000000"},
     {name: "Navy", hex: "000080"},
