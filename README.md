@@ -1,7 +1,7 @@
 # Color Me Angular
 Learn ngRoute with colors.
 
-This lab uses [148 Built-In CSS Color Names](https://gist.github.com/nathanallen/22dbc2c0dbe1b6d2d197721ec9eeab61#file-color_names-json).
+This lab uses [148 Built-In CSS Color Names](./colors.json).
 
 > <img width="400" alt="screenshot of colors/index buttons" src="https://cloud.githubusercontent.com/assets/1489337/14548062/6a58ba58-0268-11e6-8556-ac822ab64dae.png">
 
